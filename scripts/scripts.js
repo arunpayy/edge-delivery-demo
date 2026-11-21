@@ -83,6 +83,14 @@ export function decorateMain(main) {
  */
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
+  try {
+    const savedTheme = sessionStorage.getItem('eds-brand-theme');
+    if (savedTheme && savedTheme !== 'adobe-editorial') {
+      document.documentElement.dataset.brandTheme = savedTheme;
+    }
+  } catch (e) {
+    // ignore storage errors
+  }
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
   if (main) {

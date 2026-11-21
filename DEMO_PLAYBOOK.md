@@ -14,10 +14,11 @@ Use this playbook to present **AEM Edge Delivery Services (EDS)** live to client
 | **Enterprise Architect** | Big-bang CMS migrations fail; strict governance required on regulated pages | **Strangler-fig path-by-path migration** from AEM 6.5; add **Universal Editor (XWalk)** on AEMaaCS for DAM & workflows. |
 | **Content & Ops Teams** | Complex CMS dialogs; dev tickets for simple catalogs or redirects | **Zero training curve + Spreadsheet-as-API** (`/data/use-cases.json`, `/placeholders.json`, `/redirects.json`, `/metadata.json`). |
 
-### 3 "Mic-Drop" Proof Moments During Your Live Demo
-1. **Speed Proof:** Live telemetry bar (`TTFB ~66 ms · LCP ~180 ms · CLS 0.001 · 43.9 KB JS+CSS`) + watching **Phase 3 · Delayed** wait 3 seconds before loading RUM/analytics.
-2. **Architecture Proof:** Click **Inspect EDS Blocks** to highlight all `7 / 7` isolated vanilla components live.
-3. **Authoring & Scale Proof:** Filter the sheet-driven Use-Case Catalog (`/data/use-cases.json`) and demonstrate the shared `/fragments/cta-banner` updating across all 4 pages from one edit.
+### 4 "Mic-Drop" Proof Moments During Your Live Demo
+1. **Speed Proof (`/`):** Live telemetry bar (`TTFB ~66 ms · LCP ~180 ms · CLS 0.001 · 43.9 KB JS+CSS`) + watching **Phase 3 · Delayed** wait 3 seconds before loading RUM/analytics.
+2. **Design System Proof (`/executive-brief`):** Click **Nordic Luxury** and **Fintech Midnight** in the **Live Design Token Studio** — the entire multi-page showcase re-skins instantaneously without changing a single authored document, proving brand lock & Figma-to-CSS parity for Design Directors.
+3. **Architecture Proof (`/`):** Click **Inspect EDS Blocks** to highlight all `7 / 7` isolated vanilla components live.
+4. **Authoring & Scale Proof (`/` & `/docs/library/blocks`):** Filter the sheet-driven Use-Case Catalog (`/data/use-cases.json`) and demonstrate the shared `/fragments/cta-banner` updating across all 5 pages from one edit.
 
 ## Before the Meeting (2 Minutes)
 1. Start the local Edge Delivery dev server:

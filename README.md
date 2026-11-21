@@ -15,8 +15,9 @@ npm ci
 aem up
 ```
 
-Open http://localhost:3000 to explore all four showcase pages:
+Open http://localhost:3000 to explore all five showcase pages:
 - `/` — Executive overview, live Core Web Vitals telemetry + **Inspect EDS Blocks** toggle, sheet-driven Use-Case Explorer, authoring mode tabs, reusable fragment, and FAQ accordion.
+- `/executive-brief` — Boardroom ROI, **Live Multi-Brand Design Token Studio** (`design-studio`), why designers love Edge Delivery, Security/RBAC governance, 30-60-90 day pilot roadmap, AI/GEO readiness, and honest decision matrix.
 - `/use-cases` — Six enterprise AEM Edge Delivery use cases (campaign velocity, Universal Editor, Adobe Commerce, multi-brand scale, and AEM 6.5 migration).
 - `/docs/library/blocks` — Live Block Library paired with exact Google Docs / Word / DA.live authoring tables, Page `Metadata`, `Section Metadata` palette, and Author Style Checklist.
 - `/architecture` — Edge Delivery pipeline, Eager/Lazy/Delayed waterfall, and AEM Code Sync go-live checklist.
@@ -29,6 +30,7 @@ For a structured 10-minute presentation script, see [DEMO_PLAYBOOK.md](DEMO_PLAY
 | Block | Purpose |
 | :--- | :--- |
 | `hero` | Eager LCP hero supporting explicit authored tables (headline, CTAs, visual diagram) and auto-blocked `picture + h1`. |
+| `design-studio` | Live 3-brand Design Token switcher (`Adobe Editorial`, `Nordic Luxury`, `Fintech Midnight`) with WCAG contrast swatches and fluid type specimens. |
 | `eds-metrics` | Live browser Core Web Vitals (`TTFB`, `FCP`, `LCP`, `CLS`, asset weight, block count), 3-phase loading badges, and an interactive **Inspect EDS Blocks** overlay toggle. |
 | `use-case-catalog` | Lazy-fetched (`IntersectionObserver`) Edge JSON sheet catalog (`/data/use-cases.json`) with category filter pills and instant search. |
 | `cards` | Responsive grid cards including `cards (metrics)` KPI variant. |

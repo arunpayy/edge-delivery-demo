@@ -55,6 +55,49 @@
   --shadow-md: 0 8px 24px rgb(19 23 32 / 8%), 0 2px 6px rgb(19 23 32 / 4%);
 }
 
+/* Multi-brand Design Token themes (live demo for Design Directors & Brand teams) */
+:root[data-brand-theme='nordic-luxury'] {
+  --background-color: #f7f4ee;
+  --surface-color: #fffdf9;
+  --surface-muted: #ede7dc;
+  --light-color: #ede7dc;
+  --dark-color: #1c1917;
+  --dark-surface: #292524;
+  --border-color: #dfd6c7;
+  --border-strong: #c4b59e;
+  --text-color: #1c1917;
+  --text-muted: #57534e;
+  --accent-color: #14532d;
+  --accent-hover: #0f3f22;
+  --accent-soft: #ecfdf3;
+  --link-color: #9a5b13;
+  --link-hover-color: #7c460c;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+}
+
+:root[data-brand-theme='fintech-midnight'] {
+  --background-color: #f3f6fb;
+  --surface-color: #fff;
+  --surface-muted: #e6eef9;
+  --light-color: #e6eef9;
+  --dark-color: #0b1220;
+  --dark-surface: #132038;
+  --border-color: #cfdbee;
+  --border-strong: #a7bddc;
+  --text-color: #0b1220;
+  --text-muted: #42526e;
+  --accent-color: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-soft: #eff6ff;
+  --link-color: #0284c7;
+  --link-hover-color: #0369a1;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+}
+
 *,
 *::before,
 *::after {

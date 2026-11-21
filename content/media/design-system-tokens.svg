@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-label="Figma Design System Tokens to Multi-Brand Edge Delivery Pipeline">
+  <defs>
+    <linearGradient id="dsBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f141e"/>
+      <stop offset="100%" stop-color="#192338"/>
+    </linearGradient>
+    <marker id="dsArr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="800" height="480" rx="14" fill="url(#dsBg)"/>
+  <text x="32" y="40" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">DESIGN SYSTEM INTEGRITY · FIGMA TO MULTI-BRAND EDGE DELIVERY</text>
+
+  <!-- Col 1: Figma Variables -->
+  <rect x="32" y="68" width="212" height="248" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="48" y="96" fill="#ffb4ae" font-family="monospace" font-size="11" font-weight="700">1. FIGMA VARIABLES</text>
+  <text x="48" y="120" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Brand Source of Truth</text>
+
+  <rect x="48" y="138" width="180" height="32" rx="6" fill="#0f172a"/>
+  <circle cx="64" cy="154" r="7" fill="#eb1000"/>
+  <circle cx="82" cy="154" r="7" fill="#1473e6"/>
+  <circle cx="100" cy="154" r="7" fill="#12805c"/>
+  <text x="118" y="158" fill="#cbd5e1" font-family="monospace" font-size="11">Color Modes</text>
+
+  <rect x="48" y="180" width="180" height="32" rx="6" fill="#0f172a"/>
+  <text x="60" y="200" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Aa</text>
+  <text x="86" y="200" fill="#cbd5e1" font-family="monospace" font-size="11">Fluid Type Scale</text>
+
+  <rect x="48" y="222" width="180" height="32" rx="6" fill="#0f172a"/>
+  <text x="60" y="242" fill="#7cc4ff" font-family="monospace" font-size="11">Grid · Spacing · Radii</text>
+
+  <rect x="48" y="264" width="180" height="34" rx="6" fill="#12805c" fill-opacity="0.2" stroke="#10b981"/>
+  <text x="60" y="285" fill="#6ee7b7" font-family="monospace" font-size="11">WCAG 2.2 AA Contrast</text>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="246" y1="192" x2="288" y2="192" stroke="#94a3b8" stroke-width="2" marker-end="url(#dsArr)"/>
+
+  <!-- Col 2: Guardrailed CSS Tokens + Blocks -->
+  <rect x="296" y="68" width="218" height="248" rx="12" fill="#152033" stroke="#eb1000" stroke-width="1.8"/>
+  <text x="314" y="96" fill="#7cc4ff" font-family="monospace" font-size="11" font-weight="700">2. GUARDRAILED CODE</text>
+  <text x="314" y="120" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">1:1 CSS Custom Props</text>
+
+  <rect x="314" y="138" width="182" height="72" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="326" y="158" fill="#6ee7b7" font-family="monospace" font-size="11">--accent-color</text>
+  <text x="326" y="176" fill="#93c5fd" font-family="monospace" font-size="11">--heading-font-size-xxl</text>
+  <text x="326" y="194" fill="#fcd34d" font-family="monospace" font-size="11">--radius-md · --surface</text>
+
+  <rect x="314" y="222" width="182" height="76" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="326" y="244" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Zero Rogue Styling</text>
+  <text x="326" y="264" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Authors pick approved</text>
+  <text x="326" y="280" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">variants — never raw CSS</text>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="516" y1="192" x2="558" y2="192" stroke="#94a3b8" stroke-width="2" marker-end="url(#dsArr)"/>
+
+  <!-- Col 3: Multi-Brand Output -->
+  <rect x="566" y="68" width="202" height="248" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="582" y="96" fill="#6ee7b7" font-family="monospace" font-size="11" font-weight="700">3. MULTI-BRAND LIVE</text>
+  <text x="582" y="120" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">1 Codebase → N Brands</text>
+
+  <rect x="582" y="138" width="170" height="46" rx="8" fill="#fafafa"/>
+  <rect x="592" y="150" width="10" height="22" rx="3" fill="#eb1000"/>
+  <text x="610" y="160" fill="#131720" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Adobe Editorial</text>
+  <text x="610" y="175" fill="#4a5568" font-family="monospace" font-size="10">#eb1000 · 6px radius</text>
+
+  <rect x="582" y="194" width="170" height="46" rx="4" fill="#f7f4ee"/>
+  <rect x="592" y="206" width="10" height="22" rx="1" fill="#14532d"/>
+  <text x="610" y="216" fill="#1c1917" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Nordic Luxury</text>
+  <text x="610" y="231" fill="#57534e" font-family="monospace" font-size="10">#14532d · 2px sharp</text>
+
+  <rect x="582" y="250" width="170" height="46" rx="12" fill="#f3f6fb"/>
+  <rect x="592" y="262" width="10" height="22" rx="5" fill="#2563eb"/>
+  <text x="610" y="272" fill="#0b1220" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Fintech Midnight</text>
+  <text x="610" y="287" fill="#42526e" font-family="monospace" font-size="10">#2563eb · 12px soft</text>
+
+  <!-- Bottom Guarantee Bar -->
+  <rect x="32" y="344" width="736" height="104" rx="12" fill="#111827" stroke="#334155" stroke-width="1.2"/>
+  <text x="52" y="372" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="0.8">WHY DESIGN DIRECTORS &amp; EXECUTIVES ALIGN ON EDGE DELIVERY</text>
+
+  <rect x="52" y="388" width="218" height="44" rx="8" fill="#12805c" fill-opacity="0.18" stroke="#10b981"/>
+  <text x="66" y="414" fill="#6ee7b7" font-family="monospace" font-size="11" font-weight="700">CLS ~0.001 · Zero Jank</text>
+
+  <rect x="291" y="388" width="218" height="44" rx="8" fill="#1473e6" fill-opacity="0.18" stroke="#3b82f6"/>
+  <text x="305" y="414" fill="#93c5fd" font-family="monospace" font-size="11" font-weight="700">Per-PR Visual Review URLs</text>
+
+  <rect x="530" y="388" width="218" height="44" rx="8" fill="#eb1000" fill-opacity="0.2" stroke="#eb1000"/>
+  <text x="544" y="414" fill="#ffb4ae" font-family="monospace" font-size="11" font-weight="700">Media Bus WebP/AVIF</text>
+</svg>

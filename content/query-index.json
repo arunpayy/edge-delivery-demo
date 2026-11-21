@@ -1,12 +1,18 @@
 {
-  "total": 4,
+  "total": 5,
   "offset": 0,
-  "limit": 4,
+  "limit": 5,
   "data": [
     {
       "path": "/",
       "title": "AEM Edge Delivery Services Showcase",
       "description": "Live interactive demonstration of Adobe AEM Edge Delivery Services architecture, blocks, sheet-driven APIs, and 3-phase loading.",
+      "lastModified": 1795220000
+    },
+    {
+      "path": "/executive-brief",
+      "title": "Executive & Design Leadership Brief | AEM Edge Delivery Showcase",
+      "description": "Boardroom ROI, security governance, 30-60-90 day pilot roadmap, AI/GEO readiness, and live multi-brand design system tokens.",
       "lastModified": 1795220000
     },
     {
@@ -17,14 +23,14 @@
     },
     {
       "path": "/docs/library/blocks",
-      "title": "Block Library & Authoring Reference | AEM Edge Delivery Showcase",
-      "description": "Live rendered showcase blocks alongside the exact Google Docs, Word, and DA.live authoring tables.",
+      "title": "Edge Delivery Services Block Library & Authoring Guide",
+      "description": "Live rendered showcase blocks alongside exact authoring tables, Page Metadata, Section Styles, and Author Style Checklist.",
       "lastModified": 1795220000
     },
     {
       "path": "/architecture",
       "title": "Architecture & Core Web Vitals | AEM Edge Delivery Showcase",
-      "description": "Deep dive into the Edge Delivery pipeline, 3-phase loading lifecycle, and AEM Code Sync go-live checklist.",
+      "description": "Deep dive into the Edge Delivery pipeline, 3-phase loading lifecycle, built-in SEO, and AEM Code Sync go-live checklist.",
       "lastModified": 1795220000
     }
   ],
