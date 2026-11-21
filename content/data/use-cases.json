@@ -1,0 +1,88 @@
+{
+  "total": 8,
+  "offset": 0,
+  "limit": 8,
+  "data": [
+    {
+      "id": "marketing-campaigns",
+      "title": "High-Velocity Campaign & Product Launches",
+      "category": "Document Authoring",
+      "authoringSurface": "Google Docs / Word / DA.live",
+      "impactMetric": "10x Faster Publish",
+      "summary": "Marketing teams draft full landing pages in familiar documents and publish to global edge CDN in seconds via Sidekick—eliminating engineering sprint queues.",
+      "blocks": "hero, columns, cards, fragment",
+      "path": "/use-cases#campaign-velocity"
+    },
+    {
+      "id": "cwv-seo-landing",
+      "title": "100/100 Core Web Vitals Acquisition Pages",
+      "category": "Performance & CWV",
+      "authoringSurface": "Document Authoring + Code Bus",
+      "impactMetric": "100 Lighthouse",
+      "summary": "Zero-build ES modules and strict Eager → Lazy → Delayed loading deliver sub-second LCP and near-zero CLS to maximize organic SEO rank and paid-ad conversion.",
+      "blocks": "hero, eds-metrics, cards",
+      "path": "/architecture"
+    },
+    {
+      "id": "sheet-driven-api",
+      "title": "Spreadsheet-as-API Dynamic Directories & Catalogs",
+      "category": "Document Authoring",
+      "authoringSurface": "Google Sheets / Excel → Edge JSON",
+      "impactMetric": "Zero Backend API",
+      "summary": "Business users maintain structured catalogs, store locators, or placeholders in spreadsheets that EDS serves automatically as CDN-cached JSON endpoints.",
+      "blocks": "use-case-catalog, tabs",
+      "path": "/docs/library/blocks#use-case-catalog"
+    },
+    {
+      "id": "universal-editor-wysiwyg",
+      "title": "AEMaaCS + Universal Editor (XWalk) Governance",
+      "category": "Universal Editor",
+      "authoringSurface": "AEM Universal Editor (WYSIWYG)",
+      "impactMetric": "Enterprise Governance",
+      "summary": "Combines AEM Cloud Service workflows, Assets DAM, and in-context WYSIWYG authoring with Edge Delivery's sub-second front-end rendering pipeline.",
+      "blocks": "hero, columns, tabs, accordion",
+      "path": "/use-cases#universal-editor"
+    },
+    {
+      "id": "commerce-storefront",
+      "title": "Ultra-Fast Adobe Commerce Storefront & PDPs",
+      "category": "Commerce",
+      "authoringSurface": "Docs + Commerce Drop-ins",
+      "impactMetric": "< 1.0s Mobile LCP",
+      "summary": "Pairs Edge Delivery editorial storytelling with Adobe Commerce APIs for product listing pages, PDPs, and checkout without heavy SPA hydration delays.",
+      "blocks": "hero, cards, use-case-catalog",
+      "path": "/use-cases#commerce-storefront"
+    },
+    {
+      "id": "multi-brand-localization",
+      "title": "Multi-Brand & Multi-Region Global Rollouts",
+      "category": "Multi-Site",
+      "authoringSurface": "Shared Block Library + Sheets",
+      "impactMetric": "1 Codebase → N Sites",
+      "summary": "Share one hardened block library across regional markets while isolating brand tokens, translated placeholders sheets, and regional fragments.",
+      "blocks": "fragment, columns, header, footer",
+      "path": "/use-cases#multi-brand"
+    },
+    {
+      "id": "fragment-reuse",
+      "title": "Author-Once Reusable Content Fragments",
+      "category": "Document Authoring",
+      "authoringSurface": "Shared /fragments/* Docs",
+      "impactMetric": "Single Source of Truth",
+      "summary": "Update legal notices, promotional banners, navigation, or global CTAs in a single fragment document and reflect changes consistently across every page.",
+      "blocks": "fragment, header, footer",
+      "path": "/docs/library/blocks#fragment"
+    },
+    {
+      "id": "legacy-migration",
+      "title": "Incremental AEM 6.5 / Legacy Site Modernization",
+      "category": "Migration",
+      "authoringSurface": "AEM Importer + Edge Routing",
+      "impactMetric": "Zero Big-Bang Risk",
+      "summary": "Migrate high-traffic marketing paths from AEM 6.5 or legacy CMS to Edge Delivery path-by-path using automated content importers and CDN routing.",
+      "blocks": "accordion, tabs, columns",
+      "path": "/use-cases#legacy-migration"
+    }
+  ],
+  ":type": "sheet"
+}

@@ -1,0 +1,32 @@
+{
+  "total": 4,
+  "offset": 0,
+  "limit": 4,
+  "data": [
+    {
+      "path": "/",
+      "title": "AEM Edge Delivery Services Showcase",
+      "description": "Live interactive demonstration of Adobe AEM Edge Delivery Services architecture, blocks, sheet-driven APIs, and 3-phase loading.",
+      "lastModified": 1795220000
+    },
+    {
+      "path": "/use-cases",
+      "title": "Enterprise Use Cases | AEM Edge Delivery Showcase",
+      "description": "Six production AEM Edge Delivery Services use cases from rapid campaign launches to Commerce storefronts and AEM 6.5 migrations.",
+      "lastModified": 1795220000
+    },
+    {
+      "path": "/docs/library/blocks",
+      "title": "Block Library & Authoring Reference | AEM Edge Delivery Showcase",
+      "description": "Live rendered showcase blocks alongside the exact Google Docs, Word, and DA.live authoring tables.",
+      "lastModified": 1795220000
+    },
+    {
+      "path": "/architecture",
+      "title": "Architecture & Core Web Vitals | AEM Edge Delivery Showcase",
+      "description": "Deep dive into the Edge Delivery pipeline, 3-phase loading lifecycle, and AEM Code Sync go-live checklist.",
+      "lastModified": 1795220000
+    }
+  ],
+  ":type": "sheet"
+}

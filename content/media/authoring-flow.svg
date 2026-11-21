@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" aria-label="Document Authoring Table to Decorated EDS Block Flow">
+  <rect width="800" height="440" rx="12" fill="#f8fafc"/>
+  <rect x="1" y="1" width="798" height="438" rx="11" fill="none" stroke="#dde3ee" stroke-width="2"/>
+  <text x="28" y="38" fill="#4a5568" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">CONTENT-DRIVEN DEVELOPMENT · AUTHOR TABLE TO LIVE BLOCK</text>
+
+  <!-- Left: Doc table -->
+  <rect x="28" y="60" width="330" height="346" rx="10" fill="#ffffff" stroke="#c2ccde" stroke-width="1.5"/>
+  <rect x="28" y="60" width="330" height="36" rx="10" fill="#131720"/>
+  <text x="46" y="83" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Google Doc / Word / DA.live</text>
+
+  <rect x="48" y="114" width="290" height="34" fill="#1473e6"/>
+  <text x="60" y="136" fill="#ffffff" font-family="monospace" font-size="13" font-weight="700">Cards (metrics)</text>
+
+  <rect x="48" y="148" width="110" height="58" fill="#f1f4f9" stroke="#dde3ee"/>
+  <text x="60" y="182" fill="#131720" font-family="system-ui, sans-serif" font-size="13" font-weight="700">100 / 100</text>
+  <rect x="158" y="148" width="180" height="58" fill="#ffffff" stroke="#dde3ee"/>
+  <text x="170" y="174" fill="#131720" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Core Web Vitals</text>
+  <text x="170" y="192" fill="#4a5568" font-family="system-ui, sans-serif" font-size="11">Verified on every PR</text>
+
+  <rect x="48" y="206" width="110" height="58" fill="#f1f4f9" stroke="#dde3ee"/>
+  <text x="60" y="240" fill="#131720" font-family="system-ui, sans-serif" font-size="13" font-weight="700">&lt; 5 sec</text>
+  <rect x="158" y="206" width="180" height="58" fill="#ffffff" stroke="#dde3ee"/>
+  <text x="170" y="232" fill="#131720" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Author to Live</text>
+  <text x="170" y="250" fill="#4a5568" font-family="system-ui, sans-serif" font-size="11">Sidekick 1-click publish</text>
+
+  <rect x="48" y="284" width="290" height="98" rx="6" fill="#fff1f0" stroke="#fecaca"/>
+  <text x="62" y="308" fill="#c50d00" font-family="system-ui, sans-serif" font-size="12" font-weight="700">No AEM Dialogs or Dispatcher Flushes</text>
+  <text x="62" y="328" fill="#4a5568" font-family="system-ui, sans-serif" font-size="12">Authors edit familiar tables &amp; headings.</text>
+  <text x="62" y="346" fill="#4a5568" font-family="system-ui, sans-serif" font-size="12">Edge Pipeline converts to clean semantic</text>
+  <text x="62" y="364" fill="#4a5568" font-family="system-ui, sans-serif" font-size="12">HTML automatically.</text>
+
+  <!-- Arrow -->
+  <path d="M 374 232 L 424 232" stroke="#eb1000" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="422,224 438,232 422,240" fill="#eb1000"/>
+  <text x="405" y="216" text-anchor="middle" fill="#eb1000" font-family="monospace" font-size="11" font-weight="700">decorate()</text>
+
+  <!-- Right: Rendered UI -->
+  <rect x="448" y="60" width="324" height="346" rx="10" fill="#ffffff" stroke="#c2ccde" stroke-width="1.5"/>
+  <rect x="448" y="60" width="324" height="36" rx="10" fill="#12805c"/>
+  <text x="466" y="83" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Decorated Edge Delivery Block</text>
+
+  <rect x="468" y="116" width="134" height="122" rx="8" fill="#fafafa" stroke="#dde3ee" stroke-width="1.5"/>
+  <text x="482" y="156" fill="#eb1000" font-family="system-ui, sans-serif" font-size="22" font-weight="700">100/100</text>
+  <text x="482" y="182" fill="#131720" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Core Web Vitals</text>
+  <text x="482" y="202" fill="#4a5568" font-family="system-ui, sans-serif" font-size="11">Verified on every PR</text>
+
+  <rect x="618" y="116" width="134" height="122" rx="8" fill="#fafafa" stroke="#dde3ee" stroke-width="1.5"/>
+  <text x="632" y="156" fill="#eb1000" font-family="system-ui, sans-serif" font-size="22" font-weight="700">&lt; 5 sec</text>
+  <text x="632" y="182" fill="#131720" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Author to Live</text>
+  <text x="632" y="202" fill="#4a5568" font-family="system-ui, sans-serif" font-size="11">Sidekick 1-click</text>
+
+  <rect x="468" y="260" width="284" height="122" rx="8" fill="#131720"/>
+  <text x="482" y="284" fill="#6ee7b7" font-family="monospace" font-size="11">// blocks/cards/cards.js + cards.css</text>
+  <text x="482" y="306" fill="#e2e8f0" font-family="monospace" font-size="11">&lt;div class="cards metrics block"</text>
+  <text x="482" y="324" fill="#e2e8f0" font-family="monospace" font-size="11">  data-block-name="cards"</text>
+  <text x="482" y="342" fill="#e2e8f0" font-family="monospace" font-size="11">  data-block-status="loaded"&gt;</text>
+  <text x="482" y="362" fill="#7cc4ff" font-family="monospace" font-size="11">  &lt;ul&gt;...&lt;/ul&gt;&lt;/div&gt;</text>
+</svg>

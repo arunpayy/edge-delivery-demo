@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" aria-label="Multi-Brand and Fragment Reuse at Scale">
+  <defs>
+    <linearGradient id="mbBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f141e"/>
+      <stop offset="100%" stop-color="#1a2235"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="440" rx="12" fill="url(#mbBg)"/>
+  <text x="28" y="38" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">ENTERPRISE SCALE · ONE CODEBASE, MANY EXPERIENCES</text>
+
+  <!-- 4 Spokes -->
+  <line x1="270" y1="190" x2="210" y2="145" stroke="#475569" stroke-width="2"/>
+  <line x1="530" y1="190" x2="590" y2="145" stroke="#475569" stroke-width="2"/>
+  <line x1="270" y1="255" x2="210" y2="305" stroke="#475569" stroke-width="2"/>
+  <line x1="530" y1="255" x2="590" y2="305" stroke="#475569" stroke-width="2"/>
+
+  <!-- Center Hub -->
+  <rect x="270" y="148" width="260" height="148" rx="12" fill="#152033" stroke="#eb1000" stroke-width="2.2"/>
+  <text x="400" y="182" text-anchor="middle" fill="#ffb4ae" font-family="monospace" font-size="11" font-weight="700">SHARED EDS REPO</text>
+  <text x="400" y="210" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Core Block Library</text>
+  <text x="400" y="236" text-anchor="middle" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">Design Tokens · Fragments</text>
+  <text x="400" y="256" text-anchor="middle" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">Edge Sheets · Query Index</text>
+  <text x="400" y="278" text-anchor="middle" fill="#6ee7b7" font-family="monospace" font-size="11">100/100 CWV Guardrails</text>
+
+  <rect x="28" y="84" width="186" height="106" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="44" y="114" fill="#ffb4ae" font-family="monospace" font-size="11" font-weight="700">MARKETING</text>
+  <text x="44" y="138" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Campaign Launches</text>
+  <text x="44" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Docs → Live in minutes</text>
+  <text x="44" y="177" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Zero sprint bottleneck</text>
+
+  <rect x="586" y="84" width="186" height="106" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="602" y="114" fill="#7cc4ff" font-family="monospace" font-size="11" font-weight="700">COMMERCE</text>
+  <text x="602" y="138" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Storefront PDPs</text>
+  <text x="602" y="160" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Drop-in cart + catalog</text>
+  <text x="602" y="177" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Sub-second conversion</text>
+
+  <rect x="28" y="274" width="186" height="106" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="44" y="304" fill="#6ee7b7" font-family="monospace" font-size="11" font-weight="700">LOCALIZATION</text>
+  <text x="44" y="328" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Multi-Region Sites</text>
+  <text x="44" y="350" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Placeholders sheets</text>
+  <text x="44" y="367" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Regional fragments</text>
+
+  <rect x="586" y="274" width="186" height="106" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="602" y="304" fill="#fcd34d" font-family="monospace" font-size="11" font-weight="700">MIGRATION</text>
+  <text x="602" y="328" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">AEM 6.5 → EDS</text>
+  <text x="602" y="350" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Strangler-fig rollout</text>
+  <text x="602" y="367" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Route path-by-path</text>
+</svg>

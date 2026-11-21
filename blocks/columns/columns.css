@@ -1,10 +1,20 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  gap: 24px;
+}
+
+.columns > div + div {
+  margin-top: 32px;
 }
 
 .columns img {
-  width: 1000%;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
 }
 
 .columns > div > div {
@@ -15,19 +25,35 @@
   order: 0;
 }
 
-.columns > div > .columns-img-col img {
-  display: block;
+.columns h3 {
+  margin-top: 0;
+}
+
+.columns.highlight > div {
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
 }
 
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
-    flex-direction: unset;
-    gap: 32px;
+    flex-direction: row;
+    gap: 40px;
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
+  }
+
+  .columns.reversed > div {
+    flex-direction: row-reverse;
+  }
+
+  .columns.highlight > div {
+    padding: 32px;
   }
 }

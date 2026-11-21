@@ -1,0 +1,128 @@
+.eds-metrics .eds-metrics-panel {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background-color: var(--surface-color);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.eds-metrics .eds-metrics-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.eds-metrics .eds-metrics-header h2 {
+  font-size: var(--heading-font-size-l);
+  margin: 0 0 4px;
+}
+
+.eds-metrics .eds-metrics-header p {
+  margin: 0;
+  font-size: var(--body-font-size-s);
+}
+
+.eds-metrics .eds-metrics-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.eds-metrics .eds-metrics-actions button {
+  margin: 0;
+  padding: 8px 14px;
+  font-size: var(--body-font-size-xs);
+}
+
+.eds-metrics .eds-inspect-toggle[aria-pressed='true'] {
+  background-color: var(--link-color);
+  border-color: var(--link-color);
+  color: #fff;
+}
+
+.eds-metrics .eds-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.eds-metrics .eds-metric-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  background-color: var(--surface-muted);
+  border: 1px solid var(--border-color);
+}
+
+.eds-metrics .eds-metric-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.eds-metrics .eds-metric-value {
+  font-family: var(--fixed-font-family);
+  font-size: 1.35rem;
+  line-height: 1.3;
+  color: var(--text-color);
+}
+
+.eds-metrics .eds-metric-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.eds-metrics .eds-phase-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.eds-metrics .eds-phase-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-family: var(--fixed-font-family);
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: var(--warning-bg);
+  color: var(--warning-color);
+}
+
+.eds-metrics .eds-phase-badge.is-complete {
+  background-color: var(--success-bg);
+  color: var(--success-color);
+}
+
+@media (width >= 600px) {
+  .eds-metrics .eds-metrics-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (width >= 900px) {
+  .eds-metrics .eds-metrics-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .eds-metrics .eds-metrics-actions {
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+  }
+
+  .eds-metrics .eds-metrics-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}

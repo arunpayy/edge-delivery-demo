@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Enterprise Use Cases | AEM Edge Delivery Showcase</title>
+  <meta name="description" content="Explore production Adobe AEM Edge Delivery Services use cases: campaign velocity, Universal Editor, Adobe Commerce storefronts, multi-brand scale, and AEM 6.5 migrations.">
+  <meta property="og:title" content="Enterprise Use Cases | AEM Edge Delivery Showcase">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/scripts/aem.js" type="module"></script>
+  <script src="/scripts/scripts.js" type="module"></script>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <!-- Hero -->
+    <div>
+      <div class="hero">
+        <div>
+          <div>
+            <p><em>Enterprise Use Cases</em></p>
+            <h1>Where AEM Edge Delivery Services Delivers Immediate ROI</h1>
+            <p>Six proven enterprise patterns — from rapid marketing launches and global multi-brand rollouts to Adobe Commerce storefronts and incremental AEM 6.5 modernization.</p>
+            <p><a href="#campaign-velocity">Jump to Use Cases</a></p>
+            <p><em><a href="/architecture">View Architecture Guide</a></em></p>
+          </div>
+          <div>
+            <picture>
+              <img src="/media/multi-brand-scale.svg" alt="One shared Edge Delivery codebase powering marketing, commerce, localization, and migration use cases" width="800" height="440">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Use Case 1: Campaign Velocity -->
+    <div>
+      <div class="columns highlight">
+        <div>
+          <div>
+            <p><em>Use Case 01 · Document Authoring</em></p>
+            <h2 id="campaign-velocity">High-Velocity Campaign &amp; Product Launches</h2>
+            <p>Traditional CMS workflows often force marketing teams to wait 1–2 engineering sprints for new landing pages. With Edge Delivery, authors compose pages directly in Google Docs, Word, or DA.live using standard headings and block tables, then preview and publish globally in seconds.</p>
+            <ul>
+              <li><strong>Authoring surface:</strong> Google Docs, SharePoint Word, or DA.live + AEM Sidekick.</li>
+              <li><strong>Key blocks:</strong> <code>hero</code>, <code>columns</code>, <code>cards</code>, <code>fragment</code>.</li>
+              <li><strong>Business outcome:</strong> Launch promotional pages in minutes while holding 100/100 Core Web Vitals.</li>
+            </ul>
+          </div>
+          <div>
+            <picture>
+              <img src="/media/authoring-flow.svg" alt="Document table mapped directly to live Edge Delivery block UI" width="800" height="440">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Use Cases 2, 3, 4: Universal Editor, Commerce, Multi-Brand -->
+    <div>
+      <p><em>Enterprise Patterns</em></p>
+      <h2>Governance, Commerce &amp; Global Scale</h2>
+      <div class="cards">
+        <div>
+          <div>
+            <p><em>Use Case 02 · Universal Editor</em></p>
+            <h3 id="universal-editor">AEMaaCS + Universal Editor (XWalk)</h3>
+            <p>Combine AEM Cloud Service DAM assets, approval workflows, translations, and in-context WYSIWYG editing with Edge Delivery&rsquo;s ultra-fast rendering pipeline.</p>
+            <p><strong>Recommended starter:</strong> <a href="https://github.com/adobe-rnd/aem-boilerplate-xwalk">adobe-rnd/aem-boilerplate-xwalk</a></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><em>Use Case 03 · Commerce</em></p>
+            <h3 id="commerce-storefront">Adobe Commerce High-Speed Storefronts</h3>
+            <p>Deliver sub-second mobile PDPs and PLPs by combining Edge Delivery editorial content with Adobe Commerce Catalog Service and lightweight drop-in cart components.</p>
+            <p><strong>Recommended starter:</strong> <a href="https://github.com/hlxsites/aem-boilerplate-commerce">hlxsites/aem-boilerplate-commerce</a></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><em>Use Case 04 · Multi-Site</em></p>
+            <h3 id="multi-brand">Multi-Brand &amp; Multi-Region Rollouts</h3>
+            <p>Reuse one tested block repository across dozens of brand or regional sites by parameterizing CSS custom properties, <code>/placeholders.json</code> dictionaries, and localized fragments.</p>
+            <p><strong>Recommended starter:</strong> <a href="https://github.com/adobe/aem-boilerplate">adobe/aem-boilerplate</a> + <a href="https://github.com/adobe/aem-block-collection">aem-block-collection</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="section-metadata">
+        <div>
+          <div>style</div>
+          <div>highlight</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Use Case 5 & 6: Legacy Migration & Forms -->
+    <div>
+      <p><em>Modernization Strategy</em></p>
+      <h2 id="legacy-migration">Incremental Migration from AEM 6.5 or Legacy CMS</h2>
+      <p>You do not need a risky big-bang replatform to benefit from Edge Delivery Services. Most enterprises adopt a strangler-fig rollout:</p>
+      <div class="tabs">
+        <div>
+          <div>Step 1 · Pick High-ROI Paths</div>
+          <div>
+            <h3>Target Top Acquisition &amp; Campaign URLs First</h3>
+            <p>Identify the 10–20% of pages driving 80% of paid acquisition or organic SEO traffic. Route only those URL prefixes to Edge Delivery at the CDN layer (Fastly, Akamai, Cloudflare, or CloudFront) while legacy pages remain untouched.</p>
+          </div>
+        </div>
+        <div>
+          <div>Step 2 · Automated Import</div>
+          <div>
+            <h3>Convert Existing HTML with AEM Importer</h3>
+            <p>Run <code>aem import</code> with custom mapping scripts to crawl legacy HTML, extract semantic sections and block tables, and generate clean Markdown/Docs content ready for Sidekick preview.</p>
+          </div>
+        </div>
+        <div>
+          <div>Step 3 · Measure &amp; Expand</div>
+          <div>
+            <h3>Prove Conversion Lift via Real User Monitoring (RUM)</h3>
+            <p>Compare LCP, bounce rate, and conversion between migrated Edge Delivery paths and legacy paths using built-in AEM Operational Telemetry (<code>sampleRUM</code>), then migrate remaining sections iteratively.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reusable Fragment -->
+    <div>
+      <div class="fragment">
+        <div>
+          <div><a href="/fragments/cta-banner">/fragments/cta-banner</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>

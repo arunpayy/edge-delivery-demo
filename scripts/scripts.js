@@ -13,13 +13,22 @@ import {
   loadCSS,
 } from './aem.js';
 
-const LCP_BLOCKS = []; // add your LCP blocks to the list
+const LCP_BLOCKS = ['hero'];
+
+window.edsShowcaseTimings = {
+  eagerStart: Math.round(performance.now()),
+  eagerEnd: null,
+  lazyEnd: null,
+  delayedStart: null,
+};
 
 /**
- * Builds hero block and prepends to main in a new section.
+ * Builds hero block and prepends to main in a new section when an image
+ * precedes the first h1 outside an explicit hero block.
  * @param {Element} main The container element
  */
 function buildHeroBlock(main) {
+  if (main.querySelector('.hero')) return;
   const h1 = main.querySelector('h1');
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
@@ -31,19 +40,19 @@ function buildHeroBlock(main) {
 }
 
 /**
- * load fonts.css and set a session storage flag
+ * Loads fonts.css and records a session storage hint.
  */
 async function loadFonts() {
   await loadCSS(`${window.hlx.codeBasePath}/styles/fonts.css`);
   try {
     if (!window.location.hostname.includes('localhost')) sessionStorage.setItem('fonts-loaded', 'true');
   } catch (e) {
-    // do nothing
+    // ignore storage errors in restricted contexts
   }
 }
 
 /**
- * Builds all synthetic blocks in a container element.
+ * Builds all synthetic auto-blocks in a container element.
  * @param {Element} main The container element
  */
 function buildAutoBlocks(main) {
@@ -61,7 +70,6 @@ function buildAutoBlocks(main) {
  */
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
-  // hopefully forward compatible button decoration
   decorateButtons(main);
   decorateIcons(main);
   buildAutoBlocks(main);
@@ -70,8 +78,8 @@ export function decorateMain(main) {
 }
 
 /**
- * Loads everything needed to get to LCP.
- * @param {Element} doc The container element
+ * Phase 1 (Eager): Loads everything needed to get to LCP.
+ * @param {Element} doc The document element
  */
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
@@ -82,48 +90,56 @@ async function loadEager(doc) {
     document.body.classList.add('appear');
     await waitForLCP(LCP_BLOCKS);
   }
+  window.edsShowcaseTimings.eagerEnd = Math.round(performance.now());
+  window.dispatchEvent(new CustomEvent('eds:phase-updated', { detail: { phase: 'eager' } }));
 
   try {
-    /* if desktop (proxy for fast connection) or fonts already loaded, load fonts.css */
     if (window.innerWidth >= 900 || sessionStorage.getItem('fonts-loaded')) {
       loadFonts();
     }
   } catch (e) {
-    // do nothing
+    // ignore storage errors
   }
 }
 
 /**
- * Loads everything that doesn't need to be delayed.
- * @param {Element} doc The container element
+ * Phase 2 (Lazy): Loads below-the-fold blocks, header, footer, and post-LCP styles.
+ * @param {Element} doc The document element
  */
 async function loadLazy(doc) {
   const main = doc.querySelector('main');
-  await loadBlocks(main);
+  if (main) {
+    await loadBlocks(main);
+  }
 
   const { hash } = window.location;
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
   if (hash && element) element.scrollIntoView();
 
-  loadHeader(doc.querySelector('header'));
-  loadFooter(doc.querySelector('footer'));
+  const header = doc.querySelector('header');
+  const footer = doc.querySelector('footer');
+  if (header) await loadHeader(header);
+  if (footer) await loadFooter(footer);
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
 
+  window.edsShowcaseTimings.lazyEnd = Math.round(performance.now());
+  window.dispatchEvent(new CustomEvent('eds:phase-updated', { detail: { phase: 'lazy' } }));
+
   sampleRUM('lazy');
-  sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
-  sampleRUM.observe(main.querySelectorAll('picture > img'));
+  if (main) {
+    sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
+    sampleRUM.observe(main.querySelectorAll('picture > img'));
+  }
 }
 
 /**
- * Loads everything that happens a lot later,
- * without impacting the user experience.
+ * Phase 3 (Delayed): Defers analytics, RUM CWV, and non-essential enhancements.
  */
 function loadDelayed() {
   // eslint-disable-next-line import/no-cycle
   window.setTimeout(() => import('./delayed.js'), 3000);
-  // load anything that can be postponed to the latest here
 }
 
 async function loadPage() {

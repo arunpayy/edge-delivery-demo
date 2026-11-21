@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AEM Edge Delivery Services Showcase</title>
+  <meta name="description" content="Live interactive showcase of Adobe AEM Edge Delivery Services: 3-phase loading, sheet-driven APIs, reusable fragments, and Core Web Vitals 100/100 architecture.">
+  <meta property="og:title" content="AEM Edge Delivery Services Showcase">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/scripts/aem.js" type="module"></script>
+  <script src="/scripts/scripts.js" type="module"></script>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <!-- Section 1: Eager LCP Hero -->
+    <div>
+      <div class="hero">
+        <div>
+          <div>
+            <p><em>Adobe AEM Edge Delivery Services</em></p>
+            <h1>Ship 100/100 Web Experiences at the Speed of a Document</h1>
+            <p>A live, zero-build reference showcase demonstrating Content-Driven Development, 3-phase Eager/Lazy/Delayed loading, Edge JSON spreadsheets, and reusable fragments.</p>
+            <p><a href="/use-cases">Explore Enterprise Use Cases</a></p>
+            <p><em><a href="/docs/library/blocks">Open Block Library</a></em></p>
+          </div>
+          <div>
+            <picture>
+              <img src="/media/eds-pipeline.svg" alt="AEM Edge Delivery Services end-to-end architecture pipeline showing Content Bus, Code Bus, Global Edge CDN, and 3-phase loading" width="800" height="500">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Live Performance Telemetry & Block Inspector -->
+    <div>
+      <div class="eds-metrics">
+        <div>
+          <div>
+            <h2>Live Edge Delivery Telemetry &amp; Block Inspector</h2>
+            <p>Real measurements captured from this page load. Click &ldquo;Inspect EDS Blocks&rdquo; during your presentation to reveal every decorated block boundary.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-metadata">
+        <div>
+          <div>style</div>
+          <div>compact</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Executive KPI Strip -->
+    <div>
+      <p><em>Business &amp; Engineering Outcomes</em></p>
+      <h2>Why Teams Adopt Edge Delivery Services</h2>
+      <p>Edge Delivery decouples authoring velocity from front-end performance by delivering clean semantic HTML straight from the edge CDN with zero client-side framework overhead.</p>
+      <div class="cards metrics">
+        <div>
+          <div>
+            <p><strong>100 / 100</strong></p>
+            <h3>Core Web Vitals</h3>
+            <p>Enforced on every GitHub PR with sub-second LCP, minimal JS weight, and deferred martech.</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><strong>&lt; 5 sec</strong></p>
+            <h3>Author to Live</h3>
+            <p>Edit in Google Docs, Word, DA.live, or Universal Editor and publish globally in one click.</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><strong>0 KB</strong></p>
+            <h3>Framework Runtime</h3>
+            <p>Native ES modules and CSS custom properties — no webpack builds, no hydration waterfall.</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><strong>1 Repo</strong></p>
+            <h3>Multi-Brand Scale</h3>
+            <p>Share one hardened block library across campaign microsites, storefronts, and global regions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-metadata">
+        <div>
+          <div>style</div>
+          <div>highlight</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Sheet-Driven Dynamic Use-Case Explorer -->
+    <div>
+      <p><em>Edge JSON Sheet API Use Case</em></p>
+      <h2>Interactive Enterprise Use-Case Explorer</h2>
+      <p>This block fetches <code>/data/use-cases.json</code> lazily as you scroll. In production EDS, any Google Sheet or Excel workbook published via Sidekick becomes a CDN-cached JSON API automatically — no microservice required.</p>
+      <div class="use-case-catalog">
+        <div>
+          <div><a href="/data/use-cases.json">/data/use-cases.json</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 5: Authoring & Delivery Comparison Tabs -->
+    <div>
+      <p><em>Flexible Authoring Surfaces</em></p>
+      <h2>Compare Edge Delivery Authoring &amp; Architecture Modes</h2>
+      <p>Edge Delivery is not one-size-fits-all: teams can mix document-based authoring, Universal Editor WYSIWYG, and Edge JSON sheets inside the same site.</p>
+      <div class="tabs">
+        <div>
+          <div>Document Authoring (Docs / DA)</div>
+          <div>
+            <h3>Fastest Path for Marketing &amp; Editorial Teams</h3>
+            <p>Authors create content in Google Docs, Microsoft Word (SharePoint), or Adobe Document Authoring (DA.live). Tables automatically map to semantic EDS blocks.</p>
+            <ul>
+              <li>Zero AEM training curve — onboard marketers in 15 minutes.</li>
+              <li>Built-in commenting, revision history, and collaborative editing.</li>
+              <li>Preview on <code>*.aem.page</code> and publish to <code>*.aem.live</code> via AEM Sidekick.</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div>Universal Editor (XWalk)</div>
+          <div>
+            <h3>Enterprise Governance + In-Context WYSIWYG</h3>
+            <p>Combines AEM as a Cloud Service (AEMaaCS) JCR storage, Assets DAM, workflows, and permissions with Edge Delivery&rsquo;s sub-second front-end pipeline.</p>
+            <ul>
+              <li>Structured component models with <code>data-aue-*</code> instrumentation.</li>
+              <li>Approval workflows, launches, translation jobs, and Experience Fragments.</li>
+              <li>Same lightweight vanilla JS/CSS blocks deliver 100/100 Core Web Vitals.</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div>Edge JSON Spreadsheets</div>
+          <div>
+            <h3>Zero-Backend Structured Data APIs</h3>
+            <p>Publish spreadsheets directly as edge-cached JSON endpoints (such as <code>/placeholders.json</code>, <code>/query-index.json</code>, or <code>/data/use-cases.json</code>).</p>
+            <ul>
+              <li>Powers search catalogs, localization dictionaries, redirects, and bulk metadata.</li>
+              <li>Sub-50 ms global CDN cache response with zero origin database load.</li>
+              <li>Business users update rows in Sheets/Excel without filing developer tickets.</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div>Incremental Migration</div>
+          <div>
+            <h3>Modernize AEM 6.5 or Legacy CMS Path-by-Path</h3>
+            <p>Use CDN origin routing (strangler-fig pattern) to move high-value landing pages to Edge Delivery while legacy pages remain on AEM 6.5 or AEMaaCS.</p>
+            <ul>
+              <li>Migrate top SEO and campaign paths first for immediate Core Web Vitals lift.</li>
+              <li>Automate legacy HTML-to-block conversion using <code>aem import</code>.</li>
+              <li>Avoid risky multi-year big-bang platform rewrites.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section-metadata">
+        <div>
+          <div>style</div>
+          <div>surface</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 6: Content-Driven Development Split Columns -->
+    <div>
+      <div class="columns highlight">
+        <div>
+          <div>
+            <picture>
+              <img src="/media/authoring-flow.svg" alt="How a simple two-column author table turns into a live decorated Edge Delivery block" width="800" height="440">
+            </picture>
+          </div>
+          <div>
+            <p><em>Content-Driven Development</em></p>
+            <h3>From Document Table to Production Component</h3>
+            <p>Every block in this repository starts with a clean, author-friendly table contract. The Edge Pipeline delivers semantic HTML markup, and each block&rsquo;s lightweight ES module decorates only its own DOM subtree.</p>
+            <ul>
+              <li><span class="icon icon-check"></span> Automatic responsive WebP/AVIF image delivery via Media Bus.</li>
+              <li><span class="icon icon-check"></span> Per-PR preview URLs let stakeholders review design and PageSpeed before merge.</li>
+              <li><span class="icon icon-check"></span> Strict ESLint &amp; Stylelint guardrails keep every block maintainable.</li>
+            </ul>
+            <p><a href="/docs/library/blocks">View All Blocks &amp; Authoring Tables</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 7: Live Reusable Fragment -->
+    <div>
+      <div class="fragment">
+        <div>
+          <div><a href="/fragments/cta-banner">/fragments/cta-banner</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 8: Stakeholder FAQ Accordion -->
+    <div>
+      <p><em>Executive &amp; Technical Q&amp;A</em></p>
+      <h2>Frequently Asked Architecture Questions</h2>
+      <div class="accordion">
+        <div>
+          <div>When should we choose Edge Delivery Services vs. traditional AEM Sites?</div>
+          <div>
+            <p>Choose Edge Delivery Services whenever <strong>Core Web Vitals (SEO/conversion)</strong>, <strong>authoring speed</strong>, and <strong>low front-end complexity</strong> are top priorities — including marketing sites, campaign microsites, brand hubs, and commerce storefronts. If you also need AEM workflows, DAM governance, or WYSIWYG authoring, pair Edge Delivery with <strong>Universal Editor (XWalk)</strong> on AEMaaCS.</p>
+          </div>
+        </div>
+        <div>
+          <div>How does Edge Delivery consistently hit 100/100 Lighthouse scores?</div>
+          <div>
+            <p>Three deliberate architectural rules: (1) zero framework bundle in the critical path, (2) strict 3-phase loading (<strong>Eager</strong> for LCP hero only, <strong>Lazy</strong> for below-the-fold blocks/nav/footer, <strong>Delayed</strong> at 3s+ for analytics &amp; martech), and (3) automatic image optimization with explicit dimensions to eliminate layout shift (CLS).</p>
+          </div>
+        </div>
+        <div>
+          <div>Can we integrate dynamic APIs, search, forms, or Adobe Commerce?</div>
+          <div>
+            <p>Yes. Static semantic content renders immediately at the edge for instant LCP, while interactive blocks fetch Edge JSON sheets (like the Use-Case Explorer above) or external APIs (Adobe Commerce GraphQL, Adobe Target, search indices, or microservices) lazily using <code>IntersectionObserver</code> or on user interaction.</p>
+          </div>
+        </div>
+        <div>
+          <div>How do we connect this GitHub repository to a live *.aem.page URL?</div>
+          <div>
+            <p>Install the official <strong>AEM Code Sync</strong> GitHub App on <code>arunpayy/edge-delivery-demo</code>, choose your content store (DA.live or Google Drive), and preview pages with Sidekick. See the step-by-step guide on the <a href="/architecture">Architecture</a> page or in <code>DEMO_PLAYBOOK.md</code>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-metadata">
+        <div>
+          <div>style</div>
+          <div>highlight</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>

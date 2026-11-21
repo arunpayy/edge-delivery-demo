@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="AEM Edge Delivery Services Architecture Pipeline">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f141e"/>
+      <stop offset="100%" stop-color="#1a2235"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#eb1000"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" rx="14" fill="url(#bg)"/>
+  <text x="32" y="42" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">AEM EDGE DELIVERY SERVICES · END-TO-END FLOW</text>
+
+  <!-- Column 1: Sources -->
+  <rect x="32" y="72" width="210" height="106" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <rect x="46" y="88" width="88" height="20" rx="4" fill="#1473e6" fill-opacity="0.22"/>
+  <text x="54" y="102" fill="#7cc4ff" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CONTENT</text>
+  <text x="46" y="128" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Docs · Sheets · DA</text>
+  <text x="46" y="149" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Google Docs, Word, SharePoint,</text>
+  <text x="46" y="165" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">or AEM Universal Editor</text>
+
+  <rect x="32" y="204" width="210" height="106" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <rect x="46" y="220" width="60" height="20" rx="4" fill="#eb1000" fill-opacity="0.22"/>
+  <text x="54" y="234" fill="#ffb4ae" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CODE</text>
+  <text x="46" y="260" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">GitHub Repository</text>
+  <text x="46" y="281" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Vanilla ES Modules + CSS</text>
+  <text x="46" y="297" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Zero build step · Code Sync</text>
+
+  <!-- Connectors 1 -> 2 -->
+  <line x1="242" y1="125" x2="296" y2="165" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="242" y1="257" x2="296" y2="215" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Column 2: Edge Pipeline -->
+  <rect x="304" y="96" width="214" height="190" rx="12" fill="#152033" stroke="#eb1000" stroke-width="1.8"/>
+  <text x="322" y="126" fill="#ffb4ae" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1">AEM EDGE PIPELINE</text>
+  <rect x="322" y="142" width="178" height="36" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="336" y="165" fill="#f8fafc" font-family="monospace" font-size="12">Content Bus (HTML/JSON)</text>
+  <rect x="322" y="188" width="178" height="36" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="336" y="211" fill="#f8fafc" font-family="monospace" font-size="12">Code Bus (Blocks/CSS)</text>
+  <rect x="322" y="234" width="178" height="36" rx="6" fill="#12805c" fill-opacity="0.22" stroke="#12805c"/>
+  <text x="336" y="257" fill="#6ee7b7" font-family="monospace" font-size="12">Media Bus (WebP/AVIF)</text>
+
+  <!-- Connector 2 -> 3 -->
+  <line x1="518" y1="191" x2="564" y2="191" stroke="#eb1000" stroke-width="2.2" marker-end="url(#arrowAccent)"/>
+
+  <!-- Column 3: Delivery -->
+  <rect x="572" y="72" width="196" height="238" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="590" y="102" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1">GLOBAL EDGE CDN</text>
+  <text x="590" y="130" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Preview &amp; Live</text>
+  <rect x="590" y="146" width="160" height="30" rx="6" fill="#0f172a"/>
+  <text x="602" y="165" fill="#7cc4ff" font-family="monospace" font-size="11">*.aem.page (Preview)</text>
+  <rect x="590" y="184" width="160" height="30" rx="6" fill="#0f172a"/>
+  <text x="602" y="203" fill="#6ee7b7" font-family="monospace" font-size="11">*.aem.live (Prod)</text>
+  <circle cx="630" cy="260" r="24" fill="#12805c" fill-opacity="0.2" stroke="#10b981" stroke-width="3"/>
+  <text x="630" y="265" text-anchor="middle" fill="#6ee7b7" font-family="monospace" font-size="14" font-weight="700">100</text>
+  <text x="666" y="255" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Lighthouse</text>
+  <text x="666" y="272" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Core Web Vitals</text>
+
+  <!-- Bottom 3-phase strip -->
+  <rect x="32" y="344" width="736" height="124" rx="12" fill="#111827" stroke="#334155" stroke-width="1.2"/>
+  <text x="52" y="372" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="0.8">CLIENT RUNTIME · 3-PHASE PROGRESSIVE LOADING</text>
+
+  <rect x="52" y="390" width="218" height="58" rx="8" fill="#12805c" fill-opacity="0.18" stroke="#10b981"/>
+  <text x="66" y="413" fill="#6ee7b7" font-family="monospace" font-size="12" font-weight="700">1. Eager (LCP)</text>
+  <text x="66" y="434" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">Hero + styles.css · &lt; 100 KB</text>
+
+  <rect x="291" y="390" width="218" height="58" rx="8" fill="#1473e6" fill-opacity="0.18" stroke="#3b82f6"/>
+  <text x="305" y="413" fill="#93c5fd" font-family="monospace" font-size="12" font-weight="700">2. Lazy (Blocks)</text>
+  <text x="305" y="434" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">Below-fold blocks + Nav/Footer</text>
+
+  <rect x="530" y="390" width="218" height="58" rx="8" fill="#b45309" fill-opacity="0.22" stroke="#f59e0b"/>
+  <text x="544" y="413" fill="#fcd34d" font-family="monospace" font-size="12" font-weight="700">3. Delayed (3s+)</text>
+  <text x="544" y="434" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">Martech, Analytics, RUM CWV</text>
+</svg>

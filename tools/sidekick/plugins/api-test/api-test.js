@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-unresolved
 import { PLUGIN_EVENTS } from '../../library/events/events.js';
 
-export async function decorate(container, data, query) {
+export async function decorate(container) {
   const group = document.createElement('sp-button-group');
   group.setAttribute('vertical', '');
 

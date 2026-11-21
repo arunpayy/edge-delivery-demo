@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Architecture &amp; Core Web Vitals | AEM Edge Delivery Showcase</title>
+  <meta name="description" content="Technical walkthrough of AEM Edge Delivery Services architecture: Content Bus, Code Bus, 3-phase Eager/Lazy/Delayed loading, and AEM Code Sync go-live steps.">
+  <meta property="og:title" content="Architecture &amp; Core Web Vitals | AEM Edge Delivery Showcase">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/scripts/aem.js" type="module"></script>
+  <script src="/scripts/scripts.js" type="module"></script>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <!-- Hero -->
+    <div>
+      <div class="hero">
+        <div>
+          <div>
+            <p><em>Technical Architecture</em></p>
+            <h1>Inside the 100/100 Edge Delivery Pipeline</h1>
+            <p>How Adobe AEM Edge Delivery Services combines Content Bus, Code Bus, Media Bus, and strict 3-phase client loading to achieve near-instant global page delivery.</p>
+            <p><a href="#three-phase-loading">Inspect 3-Phase Loading</a></p>
+            <p><em><a href="#go-live-checklist">Go-Live Checklist</a></em></p>
+          </div>
+          <div>
+            <picture>
+              <img src="/media/three-phase-loading.svg" alt="Eager, Lazy, and Delayed 3-phase loading waterfall diagram" width="800" height="440">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Telemetry on Architecture page -->
+    <div>
+      <div class="eds-metrics">
+        <div>
+          <div>
+            <h2>Verify 3-Phase Loading Live on This Page</h2>
+            <p>Watch Phase 3 (Delayed) flip from Deferred (3s) to Complete exactly 3 seconds after load — proving analytics never compete with LCP.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-metadata">
+        <div>
+          <div>style</div>
+          <div>compact</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3-Phase Breakdown -->
+    <div>
+      <p><em>Client Execution Lifecycle</em></p>
+      <h2 id="three-phase-loading">Eager → Lazy → Delayed Explained</h2>
+      <div class="tabs">
+        <div>
+          <div>Phase 1 · Eager (LCP)</div>
+          <div>
+            <h3>Paint Above-the-Fold in Under 1 Second</h3>
+            <p>In <code>scripts/scripts.js</code>, <code>loadEager()</code> decorates semantic sections, sets <code>body.appear</code>, and awaits only <code>waitForLCP(['hero'])</code>. Only <code>styles/styles.css</code>, <code>scripts/aem.js</code>, <code>scripts/scripts.js</code>, and the Hero block load in the critical path.</p>
+          </div>
+        </div>
+        <div>
+          <div>Phase 2 · Lazy (Blocks &amp; Shell)</div>
+          <div>
+            <h3>Decorate Below-the-Fold Without Blocking First Paint</h3>
+            <p>Once LCP is painted, <code>loadLazy()</code> loads remaining block JS/CSS modules in parallel, fetches <code>/nav.plain.html</code> and <code>/footer.plain.html</code> fragments, loads web fonts and <code>styles/lazy-styles.css</code>, and observes blocks for RUM.</p>
+          </div>
+        </div>
+        <div>
+          <div>Phase 3 · Delayed (3s+ Martech)</div>
+          <div>
+            <h3>Isolate Heavy Analytics, Tags &amp; Chat Widgets</h3>
+            <p><code>loadDelayed()</code> schedules <code>scripts/delayed.js</code> after 3 seconds. Core Web Vitals RUM beacons, Adobe Launch / Tags, consent managers, and third-party widgets execute strictly after the page is fully interactive.</p>
+          </div>
+        </div>
+        <div>
+          <div>Code Bus &amp; Content Bus</div>
+          <div>
+            <h3>Zero-Build GitHub Deployment</h3>
+            <p>Every push to GitHub syncs automatically via the <strong>AEM Code Sync</strong> GitHub App to Adobe&rsquo;s Code Bus. Content edits sync to Content Bus via Sidekick, and images transcode automatically to WebP/AVIF on Media Bus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-metadata">
+        <div>
+          <div>style</div>
+          <div>surface</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Go-Live Checklist -->
+    <div>
+      <p><em>Publish to *.aem.page &amp; *.aem.live</em></p>
+      <h2 id="go-live-checklist">Connect This Repo to Live Edge Delivery in 3 Minutes</h2>
+      <div class="columns highlight">
+        <div>
+          <div>
+            <h3>Step-by-Step Cloud Activation</h3>
+            <ol>
+              <li>Install the <a href="https://github.com/apps/aem-code-sync/installations/new">AEM Code Sync GitHub App</a> on <code>arunpayy/edge-delivery-demo</code>.</li>
+              <li>Choose your content store in the setup wizard (<strong>DA.live</strong> at <code>da.live</code> or <strong>Google Drive</strong> via <code>fstab.yaml</code>).</li>
+              <li>Seed your <code>index</code>, <code>nav</code>, <code>footer</code>, and <code>data/use-cases</code> sheets (matching the exact structures under <code>./content/</code>).</li>
+              <li>Install the AEM Sidekick browser extension and click <strong>Preview</strong> → <strong>Publish</strong>.</li>
+            </ol>
+            <p>Your live preview URL will be <code>https://main--edge-delivery-demo--arunpayy.aem.page/</code> and production will be <code>https://main--edge-delivery-demo--arunpayy.aem.live/</code>.</p>
+          </div>
+          <div>
+            <picture>
+              <img src="/media/eds-pipeline.svg" alt="AEM Edge Delivery Services pipeline from GitHub and Docs to global edge CDN" width="800" height="500">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reusable Fragment -->
+    <div>
+      <div class="fragment">
+        <div>
+          <div><a href="/fragments/cta-banner">/fragments/cta-banner</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>

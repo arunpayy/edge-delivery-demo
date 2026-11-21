@@ -1,26 +1,55 @@
-# Your Project's Title...
-Your project's description...
+# AEM Edge Delivery Services Showcase
+
+A live, zero-build Adobe Experience Manager (AEM) Edge Delivery Services (EDS) showcase demonstrating Content-Driven Development, 3-phase progressive loading (**Eager → Lazy → Delayed**), Edge JSON spreadsheets, reusable fragments, and accessible blocks.
 
 ## Environments
-- Preview: https://main--edge-delivery-demo--zhangqx1994.hlx.page/
-- Live: https://main--edge-delivery-demo--zhangqx1994.hlx.live/
+- **Local Dev Server:** http://localhost:3000 (via `aem up`, serving self-contained showcase pages from `./content/`)
+- **Preview (after AEM Code Sync):** https://main--edge-delivery-demo--arunpayy.aem.page/
+- **Live (after AEM Code Sync):** https://main--edge-delivery-demo--arunpayy.aem.live/
+- **Repository:** https://github.com/arunpayy/edge-delivery-demo
 
-## Installation
+## Quick Start (Run the Showcase Locally in 1 Minute)
 
-```sh
-npm i
+```powershell
+npm ci
+aem up
 ```
 
-## Linting
+Open http://localhost:3000 to explore all four showcase pages:
+- `/` — Executive overview, live Core Web Vitals telemetry + **Inspect EDS Blocks** toggle, sheet-driven Use-Case Explorer, authoring mode tabs, reusable fragment, and FAQ accordion.
+- `/use-cases` — Six enterprise AEM Edge Delivery use cases (campaign velocity, Universal Editor, Adobe Commerce, multi-brand scale, and AEM 6.5 migration).
+- `/docs/library/blocks` — Live Block Library paired with exact Google Docs / Word / DA.live authoring tables.
+- `/architecture` — Edge Delivery pipeline, Eager/Lazy/Delayed waterfall, and AEM Code Sync go-live checklist.
 
-```sh
+For a structured 10-minute presentation script, see [DEMO_PLAYBOOK.md](DEMO_PLAYBOOK.md).
+
+## Showcase Blocks (`blocks/`)
+
+| Block | Purpose |
+| :--- | :--- |
+| `hero` | Eager LCP hero supporting explicit authored tables (headline, CTAs, visual diagram) and auto-blocked `picture + h1`. |
+| `eds-metrics` | Live browser Core Web Vitals (`TTFB`, `FCP`, `LCP`, `CLS`, asset weight, block count), 3-phase loading badges, and an interactive **Inspect EDS Blocks** overlay toggle. |
+| `use-case-catalog` | Lazy-fetched (`IntersectionObserver`) Edge JSON sheet catalog (`/data/use-cases.json`) with category filter pills and instant search. |
+| `cards` | Responsive grid cards including `cards (metrics)` KPI variant. |
+| `columns` | Responsive multi-column split layouts including `columns (highlight)` and `columns (reversed)`. |
+| `tabs` | WAI-ARIA keyboard-accessible tabs (`ArrowLeft`, `ArrowRight`, `Home`, `End`). |
+| `accordion` | Semantic `<details>` / `<summary>` disclosure panels. |
+| `fragment` | Dynamic reusable content fragments (`/fragments/cta-banner.plain.html`). |
+| `header` & `footer` | Responsive fragment-driven navigation and footer (`/nav.plain.html`, `/footer.plain.html`). |
+
+## Quality Checks
+
+```powershell
+# ESLint (airbnb-base) + Stylelint (stylelint-config-standard)
 npm run lint
+
+# Unit tests for pure catalog filtering / sheet normalization helpers
+node --test test/catalog-utils.test.js
 ```
 
-## Local development
+## Connect to Live `*.aem.page` / `*.aem.live`
 
-1. Create a new repository based on the `aem-boilerplate` template and add a mountpoint in the `fstab.yaml`
-1. Add the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync) to the repository
-1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
-1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000`)
-1. Open the `edge-delivery-demo` directory in your favorite IDE and start coding :)
+1. Install the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync/installations/new) on `arunpayy/edge-delivery-demo`.
+2. Choose your content store (**DA.live** or **Google Drive** via `fstab.yaml`).
+3. Author `index`, `nav`, `footer`, `fragments/cta-banner`, and `data/use-cases` (sheet) matching the structures in `./content/`.
+4. Preview and publish using the AEM Sidekick browser extension.

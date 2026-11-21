@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Block Library &amp; Authoring Reference | AEM Edge Delivery Showcase</title>
+  <meta name="description" content="Live AEM Edge Delivery Services block library showing every component rendered alongside its exact Google Docs, Word, and DA.live authoring table.">
+  <meta property="og:title" content="Block Library &amp; Authoring Reference | AEM Edge Delivery Showcase">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/scripts/aem.js" type="module"></script>
+  <script src="/scripts/scripts.js" type="module"></script>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <!-- Hero -->
+    <div>
+      <div class="hero">
+        <div>
+          <div>
+            <p><em>Authoring-to-DOM Reference</em></p>
+            <h1>EDS Block Library &amp; Authoring Tables</h1>
+            <p>Every block below is rendered live by this repository&rsquo;s vanilla ES modules. Use the authoring tables to show stakeholders how simple Word, Google Docs, or DA.live tables become responsive production UI.</p>
+            <p><a href="#eds-metrics">Jump to Live Blocks</a></p>
+            <p><em><a href="/">Back to Overview</a></em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 1: EDS Metrics -->
+    <div>
+      <p><em>Block 01 · Diagnostics</em></p>
+      <h2 id="eds-metrics">EDS Metrics (Live Telemetry &amp; Block Inspector)</h2>
+      <p>Displays live Core Web Vitals, 3-phase loading timestamps, and an interactive block-boundary inspector.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>EDS Metrics</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p><strong>Live Edge Delivery Telemetry</strong></p>
+              <p>Real measurements captured from this browser session.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="eds-metrics">
+        <div>
+          <div>
+            <h2>Live Edge Delivery Telemetry</h2>
+            <p>Toggle &ldquo;Inspect EDS Blocks&rdquo; to highlight every decorated block below in real time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 2: Cards -->
+    <div>
+      <p><em>Block 02 · Grid</em></p>
+      <h2 id="cards">Cards &amp; Cards (metrics)</h2>
+      <p>Responsive CSS Grid cards with optional visual variants added in parentheses inside the block table header (e.g., <code>Cards (metrics)</code>).</p>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Cards (metrics)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>100 / 100</strong></td>
+            <td><strong>Lighthouse Score</strong> — Eager LCP &amp; deferred martech</td>
+          </tr>
+          <tr>
+            <td><strong>0 Build</strong></td>
+            <td><strong>Native ES Modules</strong> — Instant GitHub Code Sync</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="cards metrics">
+        <div>
+          <div>
+            <p><strong>100 / 100</strong></p>
+            <h3>Lighthouse Score</h3>
+            <p>Eager LCP hero, lazy blocks, and 3-second delayed analytics.</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><strong>0 Build</strong></p>
+            <h3>Native ES Modules</h3>
+            <p>Commit directly to GitHub — Code Sync deploys in seconds.</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p><strong>&lt; 50 ms</strong></p>
+            <h3>Edge JSON Sheets</h3>
+            <p>Spreadsheets served directly as cached JSON endpoints.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-metadata">
+        <div>
+          <div>style</div>
+          <div>highlight</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 3: Columns -->
+    <div>
+      <p><em>Block 03 · Split Layout</em></p>
+      <h2 id="columns">Columns (highlight)</h2>
+      <p>Stacks cleanly on mobile and displays side-by-side on desktop (<code>&gt;= 900px</code>). Supports <code>Columns (reversed)</code> and <code>Columns (highlight)</code>.</p>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Columns (highlight)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;picture&gt; (diagram or photo)</td>
+            <td><strong>Heading</strong> + copy + bullet list + CTA link</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="columns highlight">
+        <div>
+          <div>
+            <picture>
+              <img src="/media/three-phase-loading.svg" alt="Three-phase loading waterfall diagram" width="800" height="440">
+            </picture>
+          </div>
+          <div>
+            <h3>Three-Phase Progressive Loading</h3>
+            <p>Only above-the-fold LCP content loads eagerly. Everything else defers cleanly so mobile devices paint almost instantaneously.</p>
+            <p><a href="/architecture">Read Full Architecture Guide</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 4: Tabs -->
+    <div>
+      <p><em>Block 04 · Interactive</em></p>
+      <h2 id="tabs">Tabs (WAI-ARIA Keyboard Accessible)</h2>
+      <p>Supports click plus <code>ArrowLeft</code>, <code>ArrowRight</code>, <code>Home</code>, and <code>End</code> keyboard navigation.</p>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Tabs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tab Label 1</td>
+            <td>Rich formatted panel body (headings, paragraphs, lists, code)</td>
+          </tr>
+          <tr>
+            <td>Tab Label 2</td>
+            <td>Second panel body</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="tabs">
+        <div>
+          <div>Author Experience</div>
+          <div>
+            <p>Authors type a simple 2-column table in Google Docs, Word, or DA.live — column 1 becomes the tab button, column 2 becomes the panel content.</p>
+          </div>
+        </div>
+        <div>
+          <div>Accessibility</div>
+          <div>
+            <p>Renders proper <code>role="tablist"</code>, <code>role="tab"</code>, <code>role="tabpanel"</code>, <code>aria-selected</code>, <code>aria-controls</code>, and roving <code>tabIndex</code>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-metadata">
+        <div>
+          <div>style</div>
+          <div>surface</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 5: Accordion -->
+    <div>
+      <p><em>Block 05 · Disclosure</em></p>
+      <h2 id="accordion">Accordion (Semantic Details/Summary)</h2>
+      <p>Uses native HTML <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements for zero-JS accessibility and clean semantics.</p>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Accordion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Question or section title</td>
+            <td>Expandable answer or detail content</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="accordion">
+        <div>
+          <div>How do authors create an Accordion in a document?</div>
+          <div>
+            <p>Insert a 2-column table headed <strong>Accordion</strong>. Every row&rsquo;s left cell becomes the clickable summary, and the right cell becomes the expandable panel.</p>
+          </div>
+        </div>
+        <div>
+          <div>Does this block require any third-party JavaScript library?</div>
+          <div>
+            <p>No — it uses native browser <code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> semantics with under 25 lines of vanilla JavaScript.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 6: Use Case Catalog -->
+    <div>
+      <p><em>Block 06 · Dynamic Edge JSON</em></p>
+      <h2 id="use-case-catalog">Use Case Catalog (Spreadsheet-as-API)</h2>
+      <p>Authors simply link a published sheet JSON URL in a 1-cell block table. The block fetches lazily via <code>IntersectionObserver</code> and renders filter pills + instant search.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Use Case Catalog</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>/data/use-cases.json</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="use-case-catalog">
+        <div>
+          <div><a href="/data/use-cases.json">/data/use-cases.json</a></div>
+        </div>
+      </div>
+      <div class="section-metadata">
+        <div>
+          <div>style</div>
+          <div>highlight</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 7: Fragment -->
+    <div>
+      <p><em>Block 07 · Content Reuse</em></p>
+      <h2 id="fragment">Fragment (Reusable Embedded Section)</h2>
+      <p>Reference any relative path inside a <code>Fragment</code> block table to embed and decorate that document dynamically.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Fragment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>/fragments/cta-banner</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <div class="fragment">
+        <div>
+          <div><a href="/fragments/cta-banner">/fragments/cta-banner</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>
