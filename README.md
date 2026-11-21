@@ -33,6 +33,7 @@ For a structured 10-minute presentation script, see [DEMO_PLAYBOOK.md](DEMO_PLAY
 | `design-studio` | Live 3-brand Design Token switcher (`Adobe Editorial`, `Nordic Luxury`, `Fintech Midnight`) with WCAG contrast swatches and fluid type specimens. |
 | `eds-metrics` | Live browser Core Web Vitals (`TTFB`, `FCP`, `LCP`, `CLS`, asset weight, block count), 3-phase loading badges, and an interactive **Inspect EDS Blocks** overlay toggle. |
 | `use-case-catalog` | Lazy-fetched (`IntersectionObserver`) Edge JSON sheet catalog (`/data/use-cases.json`) with category filter pills and instant search. |
+| `form` | Lazy-fetched spreadsheet-driven form (`/forms/request-demo.json`) with WCAG ARIA validation and canonical Edge Delivery JSON payload preview/submission. |
 | `cards` | Responsive grid cards including `cards (metrics)` KPI variant. |
 | `columns` | Responsive multi-column split layouts including `columns (highlight)` and `columns (reversed)`. |
 | `tabs` | WAI-ARIA keyboard-accessible tabs (`ArrowLeft`, `ArrowRight`, `Home`, `End`). |
@@ -46,8 +47,8 @@ For a structured 10-minute presentation script, see [DEMO_PLAYBOOK.md](DEMO_PLAY
 # ESLint (airbnb-base) + Stylelint (stylelint-config-standard)
 npm run lint
 
-# Unit tests for pure catalog filtering / sheet normalization helpers
-node --test test/catalog-utils.test.js
+# Unit tests for pure catalog & form spreadsheet helpers
+node --test test/catalog-utils.test.js test/form-utils.test.js
 ```
 
 ## Connect to Live `*.aem.page` / `*.aem.live`

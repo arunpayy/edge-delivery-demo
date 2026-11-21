@@ -1,0 +1,64 @@
+{
+  "total": 7,
+  "offset": 0,
+  "limit": 7,
+  "data": [
+    {
+      "Name": "fullName",
+      "Type": "text",
+      "Label": "Full Name",
+      "Placeholder": "Jordan Taylor",
+      "Mandatory": "true",
+      "Options": ""
+    },
+    {
+      "Name": "email",
+      "Type": "email",
+      "Label": "Work Email",
+      "Placeholder": "jordan@enterprise.com",
+      "Mandatory": "true",
+      "Options": ""
+    },
+    {
+      "Name": "role",
+      "Type": "select",
+      "Label": "Your Role",
+      "Placeholder": "Select your role...",
+      "Mandatory": "true",
+      "Options": "Executive / Leadership, Design / Brand Director, Enterprise Architect, Marketing / Content Author, Engineering Lead"
+    },
+    {
+      "Name": "useCase",
+      "Type": "select",
+      "Label": "Primary Edge Delivery Use Case",
+      "Placeholder": "Choose a use case...",
+      "Mandatory": "true",
+      "Options": "Campaign Launch Velocity, Multi-Brand Design System, Adobe Commerce Storefront, Universal Editor (XWalk), AEM 6.5 Migration"
+    },
+    {
+      "Name": "notes",
+      "Type": "textarea",
+      "Label": "Project Goals & Timeline",
+      "Placeholder": "Tell us about your target site, Core Web Vitals goals, or authoring team...",
+      "Mandatory": "false",
+      "Options": ""
+    },
+    {
+      "Name": "consent",
+      "Type": "checkbox",
+      "Label": "I confirm this demo submission follows consent-first privacy rules.",
+      "Placeholder": "",
+      "Mandatory": "true",
+      "Options": ""
+    },
+    {
+      "Name": "submit",
+      "Type": "submit",
+      "Label": "Request 30-Day Pilot Demo",
+      "Placeholder": "",
+      "Mandatory": "false",
+      "Options": ""
+    }
+  ],
+  ":type": "sheet"
+}
