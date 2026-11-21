@@ -18,8 +18,9 @@ aem up
 Open http://localhost:3000 to explore all four showcase pages:
 - `/` — Executive overview, live Core Web Vitals telemetry + **Inspect EDS Blocks** toggle, sheet-driven Use-Case Explorer, authoring mode tabs, reusable fragment, and FAQ accordion.
 - `/use-cases` — Six enterprise AEM Edge Delivery use cases (campaign velocity, Universal Editor, Adobe Commerce, multi-brand scale, and AEM 6.5 migration).
-- `/docs/library/blocks` — Live Block Library paired with exact Google Docs / Word / DA.live authoring tables.
+- `/docs/library/blocks` — Live Block Library paired with exact Google Docs / Word / DA.live authoring tables, Page `Metadata`, `Section Metadata` palette, and Author Style Checklist.
 - `/architecture` — Edge Delivery pipeline, Eager/Lazy/Delayed waterfall, and AEM Code Sync go-live checklist.
+- **Configuration Sheets:** `/placeholders.json`, `/redirects.json`, `/metadata.json`, `/data/use-cases.json`, and `/query-index.json`.
 
 For a structured 10-minute presentation script, see [DEMO_PLAYBOOK.md](DEMO_PLAYBOOK.md).
 

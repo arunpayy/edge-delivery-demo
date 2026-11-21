@@ -1,0 +1,25 @@
+{
+  "total": 4,
+  "offset": 0,
+  "limit": 4,
+  "data": [
+    {
+      "URL": "/**",
+      "og:image": "/media/eds-pipeline.svg",
+      "robots": "index, follow"
+    },
+    {
+      "URL": "/fragments/**",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "URL": "/tools/**",
+      "robots": "noindex, nofollow"
+    },
+    {
+      "URL": "/docs/library/**",
+      "robots": "noindex, follow"
+    }
+  ],
+  ":type": "sheet"
+}

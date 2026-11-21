@@ -18,10 +18,10 @@
         <div>
           <div>
             <p><em>Authoring-to-DOM Reference</em></p>
-            <h1>EDS Block Library &amp; Authoring Tables</h1>
-            <p>Every block below is rendered live by this repository&rsquo;s vanilla ES modules. Use the authoring tables to show stakeholders how simple Word, Google Docs, or DA.live tables become responsive production UI.</p>
+            <h1>Edge Delivery Services Block Library &amp; Authoring Guide</h1>
+            <p>Every block below is rendered live by this repository&rsquo;s vanilla ES modules. Use these author-facing tables to see how plain Word, Google Docs, or DA.live tables become responsive production components &mdash; without HTML or CSS.</p>
             <p><a href="#eds-metrics">Jump to Live Blocks</a></p>
-            <p><em><a href="/">Back to Overview</a></em></p>
+            <p><em><a href="#author-style-guide">Author Style &amp; Metadata Guide</a></em></p>
           </div>
         </div>
       </div>
@@ -123,8 +123,8 @@
         </thead>
         <tbody>
           <tr>
-            <td>&lt;picture&gt; (diagram or photo)</td>
-            <td><strong>Heading</strong> + copy + bullet list + CTA link</td>
+            <td>[Insert image or diagram]</td>
+            <td><strong>Heading</strong>, short paragraph, optional bullet list, and CTA link</td>
           </tr>
         </tbody>
       </table>
@@ -274,6 +274,150 @@
       <div class="fragment">
         <div>
           <div><a href="/fragments/cta-banner">/fragments/cta-banner</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author Style Guide, Metadata & Configuration Sheets -->
+    <div>
+      <p><em>Content-Author Standards</em></p>
+      <h2 id="author-style-guide">Page Metadata, Section Styles &amp; Configuration Sheets</h2>
+      <p>Every Edge Delivery Services page follows simple author-friendly rules: type default content (headings, paragraphs, lists, links) normally, use blocks only for repeating or interactive layouts, and control page/section styling through standard tables.</p>
+
+      <h3>Page Metadata Block (Place at the Bottom of Every Page)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Metadata</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Title</td>
+            <td>Enterprise Use Cases | AEM Edge Delivery Showcase</td>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td>Concise 140&ndash;160 character summary for search engines and social cards.</td>
+          </tr>
+          <tr>
+            <td>Image</td>
+            <td>[Insert social share image for Open Graph / LinkedIn preview]</td>
+          </tr>
+          <tr>
+            <td>Robots</td>
+            <td>Optional &mdash; set <code>noindex</code> on drafts, fragments, or internal library pages.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Available Section Styles (<code>Section Metadata</code>)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th><code>style</code> value</th>
+            <th>Visual Treatment</th>
+            <th>Recommended Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><em>(omit table)</em></td>
+            <td>Default warm-white canvas</td>
+            <td>Standard content flow and editorial sections.</td>
+          </tr>
+          <tr>
+            <td><code>highlight</code></td>
+            <td>Soft tinted slate band with top/bottom dividers</td>
+            <td>KPI cards, FAQs, and visual contrast between adjacent sections.</td>
+          </tr>
+          <tr>
+            <td><code>surface</code></td>
+            <td>Crisp white surface band with subtle borders</td>
+            <td>Interactive blocks such as Tabs or structured comparisons.</td>
+          </tr>
+          <tr>
+            <td><code>dark</code></td>
+            <td>High-contrast dark navy band with light typography</td>
+            <td>Reusable CTA banners and executive callouts (skip on Hero, which styles itself).</td>
+          </tr>
+          <tr>
+            <td><code>compact</code></td>
+            <td>Tight vertical padding</td>
+            <td>Inline telemetry strips or narrow utility bands.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Author-Managed Configuration Sheets</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Sheet Path</th>
+            <th>Purpose</th>
+            <th>When Authors Update It</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="/placeholders.json">/placeholders.json</a></td>
+            <td>Reusable UI labels &amp; localized text strings</td>
+            <td>Changing button labels, breadcrumbs, or regional translations.</td>
+          </tr>
+          <tr>
+            <td><a href="/redirects.json">/redirects.json</a></td>
+            <td>URL redirects (<code>Source</code> &rarr; <code>Destination</code>)</td>
+            <td><strong>Before</strong> deleting or renaming any published page.</td>
+          </tr>
+          <tr>
+            <td><a href="/metadata.json">/metadata.json</a></td>
+            <td>Bulk Metadata by URL glob (e.g., <code>/fragments/**</code>)</td>
+            <td>Applying default <code>og:image</code> or <code>noindex</code> across whole folders.</td>
+          </tr>
+          <tr>
+            <td><a href="/data/use-cases.json">/data/use-cases.json</a></td>
+            <td>Structured Use-Case Catalog spreadsheet API</td>
+            <td>Adding or editing enterprise use-case cards with zero code changes.</td>
+          </tr>
+          <tr>
+            <td><a href="/query-index.json">/query-index.json</a></td>
+            <td>Auto-generated site page index</td>
+            <td>Updated automatically on publish to power search and listings.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Pre-Publish Content-Author Style Checklist</h3>
+      <div class="accordion">
+        <div>
+          <div>Heading Hierarchy &amp; Page Structure</div>
+          <div>
+            <p>Use exactly <strong>one <code>H1</code></strong> per page, never skip heading levels (avoid jumping from <code>H1</code> straight to <code>H3</code>), and never nest a block table inside another table.</p>
+          </div>
+        </div>
+        <div>
+          <div>Buttons, Links &amp; Accessibility</div>
+          <div>
+            <p>Create a <strong>Primary button</strong> by placing a standalone link (or bold link) on its own line, and a <strong>Secondary button</strong> by making the standalone link <em>italic</em>. Always use descriptive link text (&ldquo;Explore Enterprise Use Cases&rdquo;, never &ldquo;Click here&rdquo;) and add concise alt text to meaningful images.</p>
+          </div>
+        </div>
+        <div>
+          <div>Fragments &amp; SEO Hygiene</div>
+          <div>
+            <p>Use <code>Fragment</code> for shared site chrome and repeated banners (<code>/nav</code>, <code>/footer</code>, <code>/fragments/cta-banner</code>). Keep core SEO body copy directly on the host page so search crawlers index it in the initial HTML.</p>
+          </div>
+        </div>
+        <div>
+          <div>Safe Page Deletion &amp; Publishing Flow</div>
+          <div>
+            <p>Always add and publish a row in <code>/redirects.json</code> <em>before</em> deleting or renaming a live URL. Follow <strong>Edit &rarr; Preview (<code>*.aem.page</code>) &rarr; Verify &rarr; Publish (<code>*.aem.live</code>)</strong>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-metadata">
+        <div>
+          <div>style</div>
+          <div>surface</div>
         </div>
       </div>
     </div>
