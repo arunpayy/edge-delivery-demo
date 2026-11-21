@@ -1,0 +1,202 @@
+/* vfs style */
+.ui-pagewidthlimit {
+    max-width: 85rem;
+    margin: auto;
+}
+
+@media (width <= 45em) {
+    .ui-pagewidthlimit {
+        margin: 0 .625em
+    }
+}
+
+@media (width >= 45em)and (width <= 62.5em) {
+    .ui-pagewidthlimit {
+        margin: 0 1.25em
+    }
+}
+
+.ui-flexcolumncontainer {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+.ui-flexexpand {
+    flex: 1 0 auto;
+    position: relative
+}
+
+.ui-hide {
+    display: none !important
+}
+
+.ui-clear {
+    clear: both
+}
+
+.ui-center {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.ui-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background-color: #666;
+    background-color: rgb(0 0 0 / 60%)
+}
+
+.ui-overlay .ui-lightbox-header h2 {
+    flex: 1 1 auto
+}
+
+.fullHeight {
+    height: 100%
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%
+}
+
+a {
+    background: rgb(0 0 0 / 0%)
+}
+
+html {
+    text-size-adjust: 100%
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+q {
+    quotes: "â€œ" "â€" "â€˜" "â€™"
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, serif;
+    font-size: 1em
+}
+
+button[disabled], html input[disabled] {
+    cursor: default
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    appearance: none
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+
+html {
+    font-size: 16px
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: normal
+}
+
+a {
+    color: #1251b5
+}
+
+.as-h1, h1 {
+    font-size: 1.688rem;
+    text-transform: uppercase;
+    padding: .75em 0;
+    display: inline-block;
+    color: #fefefe
+}
+
+.as-h1 a, h1 a {
+    color: inherit
+}
+
+h1 a {
+    color: inherit;
+}
+
+.as-h2, h2 {
+    font-size: 1.0625rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #474747
+}
+
+.as-h3, h3 {
+    font-size: 1.125rem;
+    padding-bottom: .25em;
+    color: #474747
+}
+
+.as-h4, h4 {
+    font-size: .938rem;
+    font-weight: 700;
+    color: #474747
+}
+
+p {
+    color: #474747
+}
+
+main {
+    margin-top: 2em;
+}

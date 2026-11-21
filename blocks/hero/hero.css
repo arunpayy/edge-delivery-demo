@@ -1,0 +1,147 @@
+.hero .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    height: auto
+}
+
+.hero .swiper-slide picture {
+    flex: 0 0 auto
+}
+
+.hero .swiper-slide picture img {
+    width: 100%;
+    display: block
+}
+
+.hero .swiper-slide .hero-content {
+    top: 0;
+    z-index: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    background-color: rgba(0,0,0,.85)
+}
+
+.hero .swiper-slide .hero-content .hero-contentText {
+    margin-bottom: .7rem;
+    flex: 0 1 auto
+}
+
+.hero .swiper-slide .hero-content .hero-contentText h2 {
+    padding: 0;
+    margin-bottom: .25rem;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fefefe;
+    word-break: break-word;
+    word-wrap: break-word;
+    pointer-events: none
+}
+
+.hero .swiper-slide .hero-content .hero-contentText span {
+    font-size: .875em;
+    font-weight: 100;
+    color: #fefefe;
+    word-break: break-word;
+    display: block;
+    word-wrap: break-word;
+    pointer-events: none
+}
+
+.hero .swiper-slide .hero-content .hero-contentAction button {
+    border: none;
+    text-align: center;
+    padding: .6rem 1rem;
+    font-size: 14px;
+    line-height: 1.1;
+    background-color: #fff;
+    color: #474747;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.hero .swiper-slide .hero-content.dark {
+    background-color: rgba(255,255,255,.85)
+}
+
+.hero .swiper-slide .hero-content.dark h2 {
+    color: #000
+}
+
+.hero .swiper-slide .hero-content.dark span {
+    color: #000
+}
+
+.hero .swiper-slide .hero-content.dark .hero-contentAction button {
+    background-color: rgba(0,0,0,.85);
+    color: #fefefe
+}
+
+@media(min-width: 24.5em) {
+    .hero .swiper-slide .hero-content .hero-contentText {
+        width:20rem
+    }
+
+    .hero .swiper-slide .hero-content .hero-contentAction button {
+        width: auto
+    }
+}
+
+@media(min-width: 39.75em) {
+    .hero .swiper-slide .hero-content {
+        background-color:rgba(0,0,0,0);
+        position: absolute;
+        width: 53%;
+        justify-content: center;
+        padding: 1rem 0 1rem 3rem
+    }
+
+    .hero .swiper-slide .hero-content.dark {
+        background-color: rgba(0,0,0,0)
+    }
+
+    .hero .swiper-slide .hero-content .hero-contentText {
+        flex: 0 0 auto;
+        width: auto
+    }
+}
+
+@media(min-width: 48em) {
+    .hero .swiper-slide .hero-content .hero-contentText h2 {
+        font-size:1.45em
+    }
+
+    .hero .swiper-slide .hero-content .hero-contentText span {
+        font-size: .9em
+    }
+}
+
+@media(min-width: 61.25em) {
+    .hero .swiper-slide .hero-content .hero-contentText h2 {
+        font-size:1.96em
+    }
+
+    .hero .swiper-slide .hero-content .hero-contentText span {
+        font-size: 1em
+    }
+}
+
+.hero .hero-pagination {
+    text-align: center;
+    background-color: #9d9e9c
+}
+
+.hero .hero-pagination .swiper-pagination-bullet {
+    background-color: #000
+}
+
+.hero .hero-pagination .swiper-pagination-bullet-active {
+    background-color: #fff
+}
+
